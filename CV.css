@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'Varela';
+    src: url('fonts/VarelaRound-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Varela';
+    font-size: 18px;
+    color: #aaa;
+}
+
+@media print {
+    body {
+        font-size: 10pt;
+    }
+}
+
+.punctuation {
+    font-size: 80%;
+}
+
+ul, ol {
+    padding-left: 1em;
+    margin: 0;
+}
+
+li.property-when *, li.property-image * {
+    display: inline;
+    padding-left: 0;
+    font-size: 100%;
+}
+
+
+
+.property-employment ul {
+    page-break-inside: avoid;
+}
+
+
+span.string-content, a {
+    color: #37567F;
+}
+
+
+.property-name .string-content {
+    -webkit-text-stroke-width: 1px;
+    letter-spacing: 1px;
+}
+
+
+span.key {
+    display: inline-block;
+    min-width: 6em;
+    text-indent: 0;
+    border-right: 0.5em solid transparent;
+}
+
+.type-string {
+    margin-left: 7em; 
+    text-indent: -7em;
+}
+
+
+.property-experience li .key-text {
+    color: #8F3A33;
+    -webkit-text-stroke-width: 0.5px;
+    letter-spacing: 0.5px;
+}
+
+.property {
+    padding-top: 0.1em;
+}
+
+li {
+    list-style: none;    
+    padding: 0;
+} 
+
+
+
+span.key-text {
+    color: #1C6130;
+}
+
+
+body > div.object > ul > li:not(.property-overview) > span.key {
+    /* background: #faebb9;
+    margin: 0 -100vw;
+    padding: 0.1em 100vw;  */
+    /* position: relative; */
+    height: 1.2em;
+}
+
+body > div.object > ul > li:not(.property-overview) > span.key::before {
+    content: "";
+    background: #faebb9;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1.2em;
+    z-index: -1;
+}
+
+
+img {
+    float: right;
+    width: 30%;
+    padding-left: 1em; 
+    position: relative;
+    z-index: 1;
+}
+
+div.object, div.array, ol > li {
+    display: contents;
+}
+
+@media screen and (max-width: 600px) {
+    span.key {
+        display: inline;
+    }
+    
+    .type-string {
+        margin-left: 0; 
+        text-indent: 0;
+    }
+
+    img {
+        float: none;
+        width: 100%;
+    }
+}

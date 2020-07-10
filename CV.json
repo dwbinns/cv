@@ -1,0 +1,108 @@
+{
+    "name": "David Binns",
+    "overview": "I am a Javascript developer enthusiastic about data visualisation with extensive experience in the browser and node.js",
+    "contact": {
+        "email": "dbinns.web+cv@gmail.com",
+        "phone": "+447919445300"
+    },
+    "employment": [
+        {
+            "name": "GeoSpock",
+            "when": ["2016-11", "current"],
+            "role": "Principal software engineer for visualisation in geospatial big data analysis platform",
+            "projects": {
+                "visualisation": "Working in a team to produce a high performance interactive visualisation of geotemporal data",
+                "integrations": "Integrating BI tools and 3D visualisation libraries with the GeoSpock database" 
+            },
+            "experience": {
+                "javascript": "Developing with cutting edge javascript, with Babel to ensure browser compatibility",
+                "testing": "Authoring an end-to-end automated UI test suite, using Puppeteer and Jenkins",
+                "react": "Developing a complex modularised user interface driven by redux",
+                "mapbox": "Rendering and loading custom datasources into map views",
+                "webgl": "Authoring and optimizing shaders",
+                "node.js": "Architecting a REST and GraphQL server hosted in AWS",
+                "graphql": "Writing resolvers and queries to connect cloud services to an administration interface",
+                "team": "Working at different times in scrum teams and individually"
+            },
+            "image": ["./images/geofencing.png", "Geofence filtering of geographic data in Data Explorer"]
+        },
+        {
+            "name": "Hive (AlertMe / Centrica)",
+            "when": ["2011-01", "2016-11"],
+            "role": "Front end software developer for the Hive home automation platform",
+            "projects": {
+                "UI": "Developing a web interface and REST API in PHP, Python and Javascript for controlling a wide range of devices",
+                "SRE": "Improving network reliability and security for devices in customers' homes"
+            },
+            "experience": {
+                "VCS": "Extensive experience with git, mercurial and subversion, including leading the migration from subversion to git",
+                "JS": "Large scale user interface engineering with jquery",
+                "network": "Debug and diagnosis at the packet level on embedded hardware and in the cloud"
+            },
+            "image": ["./images/alertme.png", "An example from the smart home web dashboard showing energy usage over time"]
+        },
+        {
+            "name": "Node.js and J2ME contracting",
+            "when": ["2010-11", "2010-12"],
+            "role": "Developing a Node.js server side application and J2ME client application for text entry to be deployed in developing countries"
+        },
+        {
+            "name": "European Bioinformatics Institute",
+            "when": ["2001-11", "2010-10"],
+            "role": "Web developer in the InterPro and GOA teams",
+            "projects": {
+                "InterPro": "Developing the Oracle backed InterPro protein classification browser",
+                "GOA": "Implementing the QuickGO Gene Ontology and annotation browser and editor"
+            },
+            "experience": {
+                "java": "Database access, servlet and graph visualisation",
+                "javascript": "Interactive database browsing in HTML and SVG",
+                "oracle": "Optimizing database access for real time queries and batch processing"
+            },
+            "image": ["./images/quickgo.png", "A graph rendering of the hierarchy of terms in the Gene Ontology"]
+        },
+        {
+            "name": "Unigraphics",
+            "when": ["2001-06", "2001-10"],
+            "role": "Working on a web front end for product data management software, in C++ and Javascript"
+        },
+        {
+            "name": "Apama",
+            "when": ["2001-02", "2001-05"],
+            "role": "Working in Java and SQL to develop location aware applications"
+        },
+        {
+            "name": "International Nepal Fellowship",
+            "when": ["2000-11", "2001-02"],
+            "role": "Voluntary work in Nepal with a Christian development organisation helping with computer training and maintenance"
+        }
+    ],
+    "education": [
+        {
+            "name": "BA, MMath, Mathematics, Queens' College, Cambridge University",
+            "when": ["1996", "2000"], 
+            "result": "II.1, Merit"
+        },
+        {
+            "name": "Hymers College, Hull",
+            "when": "1996",
+            "result": "5 A-levels at grade A"
+        },
+        {
+            "name": "Hymers College, Hull",
+            "when": "1994",
+            "result": "10 GCSEs at grade A/A*"
+        }
+    ],
+    "about": {
+        "volunteering": "I am a Christian and volunteer with Friends International to run events to welcome international students to Cambridge",
+        "recreation": "I enjoy recreational programming and have been mostly working in Javascript on the web and on NodeJS on Linux. The house heating system is running on two Raspberry Pis with software I have written.",
+        "image": ["./images/thermostat.png", "UI for house thermostat"]
+    },
+    "links": {
+        "JSON": "https://github.com/dwbinns/cv/CV.json",
+        "PDF": "https://github.com/dwbinns/cv/CV.pdf",
+        "HTML": "https://github.com/dwbinns/cv/CV.html",
+        "Github": "https://github.com/dwbinns/cv/"
+    }
+}
