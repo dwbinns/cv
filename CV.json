@@ -86,18 +86,13 @@
         },
         {
             "name": "Hymers College, Hull",
-            "when": "1996",
-            "result": "5 A-levels at grade A"
-        },
-        {
-            "name": "Hymers College, Hull",
-            "when": "1994",
-            "result": "10 GCSEs at grade A/A*"
+            "when": ["1989", "1996"],
+            "result": "10 GCSEs at grade A/A*, 5 A-levels at grade A"
         }
     ],
     "about": {
         "volunteering": "I am a Christian and volunteer with Friends International to run events to welcome international students to Cambridge",
-        "recreation": "I enjoy recreational programming and have been mostly working in JavaScript on the web and on NodeJS on Linux. The house heating system is running on two Raspberry Pis with software I have written.",
+        "recreation": "I enjoy recreational programming and have been mostly working in JavaScript on the web and on NodeJS on Linux. The house heating system runs on Raspberry Pis with software I have written.",
         "image": ["./images/thermostat.png", "UI for house thermostat"]
     },
     "links": {

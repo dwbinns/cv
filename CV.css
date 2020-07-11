@@ -18,7 +18,7 @@ body {
 }
 
 .punctuation {
-    font-size: 80%;
+    font-size: 70%;
 }
 
 ul, ol {
@@ -58,8 +58,8 @@ span.key {
 }
 
 .type-string {
-    margin-left: 7em; 
-    text-indent: -7em;
+    margin-left: 6.5em;
+    text-indent: -6.5em;
 }
 
 
@@ -86,11 +86,9 @@ span.key-text {
 
 
 body > div.object > ul > li:not(.property-overview) > span.key {
-    /* background: #faebb9;
-    margin: 0 -100vw;
-    padding: 0.1em 100vw;  */
-    /* position: relative; */
     height: 1.2em;
+    -webkit-text-stroke-width: 0.5px;
+    letter-spacing: 0.5px;
 }
 
 body > div.object > ul > li:not(.property-overview) > span.key::before {
@@ -106,7 +104,7 @@ body > div.object > ul > li:not(.property-overview) > span.key::before {
 
 img {
     float: right;
-    width: 30%;
+    width: 45%;
     padding-left: 1em; 
     position: relative;
     z-index: 1;
