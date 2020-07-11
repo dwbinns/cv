@@ -15,7 +15,7 @@
                 "integrations": "Integrating BI tools and 3D visualisation libraries with the GeoSpock database" 
             },
             "experience": {
-                "javascript": "Developing cutting edge JavaScript with Babel to ensure browser compatibility",
+                "javascript": "Developing with cutting edge JavaScript using Babel to ensure browser compatibility",
                 "testing": "Authoring an end-to-end automated UI test suite, using Puppeteer and Jenkins",
                 "react": "Developing a complex modularised React user interface driven by Redux",
                 "mapbox": "Rendering and loading custom datasources into map views",
@@ -36,11 +36,11 @@
                 "sre": "Improving network reliability and security for devices in customers' homes"
             },
             "experience": {
-                "vcs": "Extensive experience with git, mercurial and subversion, including leading the migration from subversion to git",
+                "vcs": "Git, mercurial and subversion, including leading the migration from subversion to git",
                 "javascript": "Large scale user interface engineering with jquery",
                 "network": "Debug and diagnosis at the packet level on embedded hardware and in the cloud"
             },
-            "image": ["./images/alertme.png", "An example from the smart home web dashboard showing energy usage over time"]
+            "image": ["./images/alertme.png", "The smart home web dashboard showing energy usage over time"]
         },
         {
             "name": "Node.js and J2ME contracting",
@@ -50,7 +50,7 @@
         {
             "name": "European Bioinformatics Institute",
             "when": ["2001-11", "2010-10"],
-            "role": "Senior Software in the InterPro and GOA teams",
+            "role": "Senior Software - web development",
             "projects": {
                 "InterPro": "Developing the Oracle backed InterPro protein classification browser",
                 "GOA": "Implementing the QuickGO Gene Ontology and annotation browser and editor"

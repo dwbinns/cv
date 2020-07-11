@@ -57,10 +57,11 @@ span.key {
     border-right: 0.5em solid transparent;
 }
 
-.type-string {
-    margin-left: 6.5em;
-    text-indent: -6.5em;
+.property.type-string {
+    margin-left: 1em;
+    text-indent: -1em;
 }
+
 
 
 .property-experience li .key-text {
@@ -104,7 +105,7 @@ body > div.object > ul > li:not(.property-overview) > span.key::before {
 
 img {
     float: right;
-    width: 45%;
+    width: 50%;
     padding-left: 1em; 
     position: relative;
     z-index: 1;
