@@ -100,9 +100,9 @@
         "image": ["./images/thermostat.png", "UI for house thermostat"]
     },
     "links": {
-        "JSON": "https://github.com/dwbinns/cv/CV.json",
-        "PDF": "https://github.com/dwbinns/cv/CV.pdf",
-        "HTML": "https://github.com/dwbinns/cv/CV.html",
-        "Github": "https://github.com/dwbinns/cv/"
+        "JSON": "https://cv.davidb.uk/CV.json",
+        "PDF": "https://cv.davidb.uk/CV.pdf",
+        "HTML": "https://cv.davidb.uk/",
+        "Github": "https://github.com/dwbinns/cv"
     }
 }
