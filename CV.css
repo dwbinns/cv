@@ -105,6 +105,9 @@ body > div.object > ul > li:not(.property-overview) > span.key::before {
     z-index: -1;
 }
 
+.has-image {
+    clear: both;
+}
 
 img {
     float: right;

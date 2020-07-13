@@ -52,7 +52,7 @@ function render(target) {
         
         return div("object",
             span("punctuation", text("{")),
-            ul("object",
+            ul(target.image ? "object has-image" : "object",
                 target.image && img(...target.image),
                 ...entries.map(([key, value], index) => li(`property type-${typeof value} property-${key}`, 
                     span("key",
@@ -77,4 +77,5 @@ function render(target) {
 window.onload = async () => {
     let cv = await (await fetch("./CV.json")).json();
     document.body.appendChild(render(cv));
+    [...document.querySelectorAll("script")].forEach(element => element.remove());
 }
