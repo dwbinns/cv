@@ -39,8 +39,11 @@ li.property-when *, li.property-image * {
 }
 
 
+
+/* Colours from: http://tristen.ca/hcl-picker/#/hcl/3/0.48/3E5B88/963F2C */
+
 span.string-content, a {
-    color: #37567F;
+    color: #3E5B88;
 }
 
 
@@ -58,20 +61,20 @@ span.key {
 }
 
 .property.type-string {
-    margin-left: 1em;
-    text-indent: -1em;
+    margin-left: 6.5em;
+    text-indent: -6.5em;
 }
 
 
 
 .property-experience li .key-text {
-    color: #8F3A33;
+    color: #963F2C;
     -webkit-text-stroke-width: 0.5px;
     letter-spacing: 0.5px;
 }
 
 .property {
-    padding-top: 0.1em;
+    padding-top: 1px;
 }
 
 li {
@@ -82,7 +85,7 @@ li {
 
 
 span.key-text {
-    color: #1C6130;
+    color: #1D6730;
 }
 
 
@@ -105,7 +108,7 @@ body > div.object > ul > li:not(.property-overview) > span.key::before {
 
 img {
     float: right;
-    width: 50%;
+    width: 47%;
     padding-left: 1em; 
     position: relative;
     z-index: 1;

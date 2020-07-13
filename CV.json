@@ -8,7 +8,7 @@
     "employment": [
         {
             "name": "GeoSpock",
-            "when": ["2016-11", "current"],
+            "when": ["2016-11-21", "current"],
             "role": "Principal software engineer for visualisation in geospatial big data analysis platform",
             "projects": {
                 "visualisation": "Working in a team to produce a high performance interactive visualisation of geotemporal data",
@@ -29,7 +29,7 @@
         },
         {
             "name": "Hive (AlertMe / Centrica)",
-            "when": ["2011-01", "2016-11"],
+            "when": ["2011-01-17", "2016-11-11"],
             "role": "Front end senior software engineer for the Hive home automation platform",
             "projects": {
                 "ui": "Developing a web interface and REST API in PHP, Python and JavaScript for controlling a wide range of devices",
@@ -49,8 +49,8 @@
         },
         {
             "name": "European Bioinformatics Institute",
-            "when": ["2001-11", "2010-10"],
-            "role": "Senior Software - web development",
+            "when": ["2001-11-01", "2010-10-31"],
+            "role": "Senior Software Engineer - web development",
             "projects": {
                 "InterPro": "Developing the Oracle backed InterPro protein classification browser",
                 "GOA": "Implementing the QuickGO Gene Ontology and annotation browser and editor"
@@ -92,7 +92,7 @@
     ],
     "about": {
         "volunteering": "I am a Christian and volunteer with Friends International to run events to welcome international students to Cambridge",
-        "recreation": "I enjoy recreational programming and have been mostly working in JavaScript on the web and on NodeJS on Linux. The house heating system runs on Raspberry Pis with software I have written.",
+        "recreation": "I enjoy recreational programming and have been mostly working in JavaScript on the web and on NodeJS on Linux. My house heating system runs on Raspberry Pis with software I have written.",
         "image": ["./images/thermostat.png", "UI for house thermostat"]
     },
     "links": {
