@@ -76,6 +76,8 @@ function render(target) {
 
 window.onload = async () => {
     let cv = await (await fetch("./CV.json")).json();
+    let version = new Date().toISOString().slice(0, 16).replace("T", " ");
+    cv.version = version;
     document.body.appendChild(render(cv));
     [...document.querySelectorAll("script")].forEach(element => element.remove());
 }
