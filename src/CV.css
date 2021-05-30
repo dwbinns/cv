@@ -9,6 +9,8 @@ body {
     font-family: 'Varela';
     font-size: 18px;
     color: #aaa;
+    max-width: 1200px;
+    margin: auto;
 }
 
 @media print {
@@ -78,9 +80,9 @@ span.key {
 }
 
 li {
-    list-style: none;    
+    list-style: none;
     padding: 0;
-} 
+}
 
 
 
@@ -120,10 +122,11 @@ body > div.object > ul > li.property-links .property {
 
 img {
     float: right;
-    width: 47%;
-    padding-left: 1em; 
+    width: 35%;
+    padding-left: 1em;
     position: relative;
     z-index: 1;
+    margin: 0.1em;
 }
 
 div.object, div.array, ol > li {
@@ -134,9 +137,9 @@ div.object, div.array, ol > li {
     span.key {
         display: inline;
     }
-    
+
     .type-string {
-        margin-left: 0; 
+        margin-left: 0;
         text-indent: 0;
     }
 

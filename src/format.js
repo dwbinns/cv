@@ -45,31 +45,30 @@ function render(target) {
                 )),
             ),
             span("punctuation", text("]")),
-        ); 
+        );
     }
     if (typeof target == "object") {
         let entries = Object.entries(target);
-        
+
         return div("object",
             span("punctuation", text("{")),
             ul(target.image ? "object has-image" : "object",
                 target.image && img(...target.image),
-                ...entries.map(([key, value], index) => li(`property type-${typeof value} property-${key}`, 
+                ...entries.map(([key, value], index) => li(`property type-${typeof value} property-${key}`,
                     span("key",
-                        text('"'), 
-                        span("key-text", text(key)), 
-                        text('"'),
-                        text(": "),
+                        span("inline-punctuation", text('"')),
+                        span("key-text", text(key)),
+                        span("inline-punctuation", text('": ')),
                     ),
                     render(value),
                     index < entries.length - 1 && span("punctuation", text(",")),
                 )),
             ),
-            span("punctuation", text("}")), 
+            span("punctuation", text("}")),
         );
     }
     if (typeof target == "string") {
-        return span("string", text('"'), span("string-content", text(target)), text('"'));
+        return span("string", span("inline-punctuation", text('"')), span("string-content", text(target)), span("inline-punctuation", text('"')));
     }
     return span(typeof target, text(JSON.stringify(target.toString())));
 }

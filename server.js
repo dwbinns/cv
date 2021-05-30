@@ -3,7 +3,7 @@ const {createReadStream, promises: {stat}} = require("fs");
 const {join, extname} = require("path");
 const { once } = require("events");
 
-const port = parseInt("David", 36) & 0xffff;
+const defaultPort = parseInt("David", 36) & 0xffff;
 
 const mimeTypes = {
     ".css": "text/css; charset: utf8",
@@ -11,25 +11,29 @@ const mimeTypes = {
     ".js": "text/javascript; charset: utf8",
     ".json": "application/javascript",
     ".ttf": "font/ttf",
-} 
+}
 
-async function server() {
-    let serve = createServer(async (request, response) => {        
-        let filePath = join(__dirname, request.url);
-        
+async function server(port = defaultPort) {
+    let serve = createServer(async (request, response) => {
+        let url = request.url == "/" ? "CV.html" : request.url;
+        let filePath = join(__dirname, "src", url);
+
         let stats = await stat(filePath).catch(e => null);
-        
-        if (!filePath.startsWith(__dirname + "/") || !stats || !stats.isFile()) {
-            filePath = join(__dirname, "CV.html");
-        } 
-        
-        response.writeHead(200, {
-            "content-type": mimeTypes[extname(filePath)] || "application/octet-stream",
-            "max-age": 0,
-        });
 
-        createReadStream(filePath).pipe(response);
+        if (stats) {
+            response.writeHead(200, {
+                "content-type": mimeTypes[extname(filePath)] || "application/octet-stream",
+                "max-age": 0,
+            });
 
+            createReadStream(filePath).pipe(response);
+        } else {
+            response.writeHead(404, {
+                "content-type": "text/plain",
+                "max-age": 0,
+            });
+            response.end("Missing");
+        }
     }).listen(port);
 
     await once(serve, "listening");

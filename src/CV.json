@@ -7,12 +7,26 @@
     },
     "employment": [
         {
+            "name": "CMR Surgical",
+            "when": ["2020-09-07", "2021-01-08"],
+            "role": "Senior software engineer in Data team",
+            "projects": {
+                "quality": "Analyzing quality of surgical tools from telemetry using statistical techniques"
+            },
+            "experience": {
+                "javascript": "Extended UI for exploring trends in quality metrics",
+                "python": "Implementing OpenAPI documented APIs using FastAPI",
+                "juptyer": "Rapid prototyping and building consensus for quality metrics"
+            },
+            "image": ["./images/versius.jpeg", "Versius surgical robot"]
+        },
+        {
             "name": "GeoSpock",
             "when": ["2016-11-21", "current"],
             "role": "Principal software engineer for visualisation in geospatial big data analysis platform",
             "projects": {
                 "visualisation": "Working in a team to produce a high performance interactive visualisation of geotemporal data",
-                "integrations": "Integrating BI tools and 3D visualisation libraries with the GeoSpock database" 
+                "integrations": "Integrating BI tools and 3D visualisation libraries with the GeoSpock database"
             },
             "experience": {
                 "javascript": "Developing with cutting edge JavaScript using Babel to ensure browser compatibility",
@@ -81,7 +95,7 @@
     "education": [
         {
             "name": "BA, MMath, Mathematics, Queens' College, Cambridge University",
-            "when": ["1996", "2000"], 
+            "when": ["1996", "2000"],
             "result": "II.1, Merit"
         },
         {

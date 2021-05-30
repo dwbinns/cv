@@ -1,0 +1,116 @@
+body {
+    font-family: sans;
+}
+
+.punctuation {
+    display: none;
+}
+
+.inline-punctuation {
+    display: none;
+}
+
+.key {
+    display: block;
+    font-size: 200%;
+    text-transform: capitalize;
+}
+
+.property .key {
+    margin-top: 1em;
+    font-weight: bold;
+    font-size: 180%;
+}
+
+.property .property .key {
+    margin-top: 0.5em;
+    font-size: 150%;
+    font-weight: normal;
+}
+
+.property .property .property .key {
+    margin-top: 0;
+    font-size: 130%;
+}
+
+.property-projects li .key,
+.property-experience li .key,
+.property-about li .key {
+    display: inline;
+    font-weight: bold;
+    font-size: 100% !important;
+    text-transform: capitalize;
+}
+
+.property-projects li .key::after,
+.property-experience li .key::after,
+.property-about li .key::after {
+    content: ": ";
+}
+
+li.property-contact ol,
+li.property-contact li,
+li.property-when ol,
+li.property-when li {
+    display: inline;
+    padding-left: 0;
+    font-size: 100%;
+}
+
+li.property-contact li {
+    padding: 0 5em;
+}
+
+li.property-when li:first-of-type::after {
+    content: " - ";
+}
+
+.property-contact {
+    text-align: center;
+}
+
+.property-overview {
+    text-align: center;
+}
+
+li.property-image {
+    display: none;
+}
+
+
+.property-when .key,
+.property-name .key,
+.property-role .key,
+.property-overview .key,
+.property-contact .key,
+.property-links li .key,
+.property-version .key,
+.property-result .key {
+    display: none;
+}
+
+.property-name {
+    font-size: 150%;
+    margin: 0.5em 0;
+    padding: 0.5em;
+    background: #ddddff;
+}
+
+body > .object > .object > .property-name {
+    font-size: 300%;
+    text-align: center;
+}
+
+img {
+    display: none;
+}
+
+li {
+    list-style: none;
+    padding: 0;
+}
+
+ul, ol {
+    padding: 0;
+    margin: 0;
+}
