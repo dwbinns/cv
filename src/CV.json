@@ -1,58 +1,66 @@
 {
     "name": "David Binns",
-    "overview": "I am a JavaScript developer enthusiastic about data visualisation with extensive experience in the browser and Node.js",
+    "overview": "I am a JavaScript full-stack developer enthusiastic about creating solutions with extensive experience in the browser and Node.js",
     "contact": {
         "email": "dbinns.web+cv@gmail.com",
         "phone": "+447919445300"
     },
     "employment": [
         {
-            "name": "CMR Surgical",
-            "when": ["2020-09-07", "2021-01-08"],
-            "role": "Senior software engineer in Data team",
-            "projects": {
-                "quality": "Analyzing quality of surgical tools from telemetry using statistical techniques"
-            },
+            "name": "Tokenized",
+            "link": "https://tokenized.com/",
+            "when": ["2021-06-06", "current"],
+            "role": "Senior full stack engineer for an blockchain asset tokenization platform",
             "experience": {
-                "javascript": "Extended UI for exploring trends in quality metrics",
+                "node.js": "Creating a new Node.JS management tool in AWS Lambda",
+                "golang": "Contributing to an API written in GO running in AWS Lambda and ECS",
+                "web": "Releasing a web wallet and an OAuth provider and clients",
+                "react-query": "Using React Query to connect an API to a user interface",
+                "devops": "Implementing a new Github CI pipeline and deployed new stacks in AWS with CloudFormation",
+                "testing": "Building an end-to-end test automation framework",
+                "billing": "Integrating Stripe to provide customer billing",
+                "electron": "Contributing to a desktop wallet app",
+                "mobile": "Prototyping a new mobile app to hold cryptographic keys",
+                "cryptography": "Implementing key derivation, signing and key management",
+                "blockchain": "Creating a public web based transaction protocol decoder"
+            },
+            "image": [
+                "./images/tokenized.png", "Tokenized Web wallet"
+            ]
+        },
+        {
+            "name": "CMR Surgical",
+            "link": "https://cmrsurgical.com/",
+            "when": ["2020-09-07", "2021-01-08"],
+            "role": "Senior software engineer in the Data team",
+            "experience": {
+                "javascript": "Developing a UI for exploring trends in quality metrics",
                 "python": "Implementing OpenAPI documented APIs using FastAPI",
                 "juptyer": "Rapid prototyping and building consensus for quality metrics"
-            },
-            "image": ["./images/versius.jpeg", "Versius surgical robot"]
+            }
         },
         {
             "name": "GeoSpock",
-            "when": ["2016-11-21", "current"],
-            "role": "Principal software engineer for visualisation in geospatial big data analysis platform",
-            "projects": {
-                "visualisation": "Working in a team to produce a high performance interactive visualisation of geotemporal data",
-                "integrations": "Integrating BI tools and 3D visualisation libraries with the GeoSpock database"
-            },
+            "when": ["2016-11-21", "2020-08-31"],
+            "role": "Principal software engineer for visualisation of geospatial big data",
             "experience": {
                 "javascript": "Developing with cutting edge JavaScript using Babel to ensure browser compatibility",
-                "testing": "Authoring an end-to-end automated UI test suite, using Puppeteer and Jenkins",
                 "react": "Developing a complex modularised React user interface driven by Redux",
-                "mapbox": "Rendering and loading custom datasources into map views",
-                "webgl": "Authoring and optimizing shaders",
+                "webgl": "Authoring and optimizing shaders for use in map rendering",
                 "node.js": "Architecting a REST and GraphQL service hosted in AWS",
-                "graphql": "Writing resolvers and queries to connect cloud services to an administration interface",
-                "team": "Working at different times in scrum teams and individually",
-                "code": "Using pull requests, code reviews and maintaining CI"
+                "team": "Working in scrum teams and individually, using pull requests and code reviews"
             },
             "image": ["./images/geofencing.png", "Geofence filtering of geographic data in Data Explorer"]
         },
         {
             "name": "Hive (AlertMe / Centrica)",
+            "link": "https://www.hivehome.com/discover-hive",
             "when": ["2011-01-17", "2016-11-11"],
             "role": "Front end senior software engineer for the Hive home automation platform",
-            "projects": {
-                "ui": "Developing a web interface and REST API in PHP, Python and JavaScript for controlling a wide range of devices",
-                "sre": "Improving network reliability and security for devices in customers' homes"
-            },
             "experience": {
                 "vcs": "Git, mercurial and subversion, including leading the migration from subversion to git",
-                "javascript": "Large scale user interface engineering with jquery",
-                "network": "Debug and diagnosis at the packet level on embedded hardware and in the cloud"
+                "javascript": "User interface engineering with jQuery",
+                "network": "Debugging at the packet level on embedded hardware and in the cloud"
             },
             "image": ["./images/alertme.png", "The smart home web dashboard showing energy usage over time"]
         },
@@ -63,12 +71,9 @@
         },
         {
             "name": "European Bioinformatics Institute",
+            "link": "https://www.ebi.ac.uk/QuickGO/term/GO:0071466",
             "when": ["2001-11-01", "2010-10-31"],
-            "role": "Senior Software Engineer - web development",
-            "projects": {
-                "InterPro": "Developing the Oracle backed InterPro protein classification browser",
-                "GOA": "Implementing the QuickGO Gene Ontology and annotation browser and editor"
-            },
+            "role": "Senior Software Engineer - web development, InterPro and GOA projects",
             "experience": {
                 "java": "Database access, servlet and graph visualisation",
                 "javascript": "Interactive database browsing in HTML and SVG",
@@ -89,7 +94,7 @@
         {
             "name": "International Nepal Fellowship",
             "when": ["2000-11", "2001-02"],
-            "role": "Voluntary work in Nepal with a Christian development organisation helping with computer training and maintenance"
+            "role": "Volunteering in Nepal with a Christian development organisation"
         }
     ],
     "education": [

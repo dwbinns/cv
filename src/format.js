@@ -10,29 +10,23 @@ function text(content) {
 
 function element(elementName, className, ...content) {
     let element = document.createElement(elementName);
-    element.className = className;
+    if (className) element.className = className;
     for (let item of content) {
-        if (item) {
-            element.appendChild(item);
+        if (item?.constructor == Object) {
+            Object.assign(element, item);
+        } else if (item) {
+            element.append(item);
         }
     }
     return element;
 }
 
-const div = (className, ...content) => element("div", className, ...content);
-const span = (className, ...content) => element("span", className, ...content);
-const ol = (className, ...content) => element("ol", className, ...content);
-const ul = (className, ...content) => element("ul", className, ...content);
-const li = (className, ...content) => element("li", className, ...content);
+const { div, span, ol, ul, li, img, a } = new Proxy({}, {
+    get(target, name) {
+        return (className, ...content) => element(name, className, ...content);
+    }
+})
 
-
-function img(src, title) {
-    let element = document.createElement("img");
-    element.src = src;
-    element.alt = title;
-    element.title = title;
-    return element;
-}
 
 function render(target) {
     if (Array.isArray(target)) {
@@ -48,21 +42,28 @@ function render(target) {
         );
     }
     if (typeof target == "object") {
-        let entries = Object.entries(target);
+        let link = target.link;
+        let image = target.image ? img('', { src: target.image[0], title: target.image[1], alt: target.image[1] }) : null;
 
         return div("object",
             span("punctuation", text("{")),
-            ul(target.image ? "object has-image" : "object",
-                target.image && img(...target.image),
-                ...entries.map(([key, value], index) => li(`property type-${typeof value} property-${key}`,
-                    span("key",
-                        span("inline-punctuation", text('"')),
-                        span("key-text", text(key)),
-                        span("inline-punctuation", text('": ')),
+            image,
+            ul("object",
+                ...Object.entries(target)
+                    .filter(([key]) => !["image", "link"].includes(key))
+                    .map(([key, value], index, array) =>
+                        li(`property type-${typeof value} property-${key}`,
+                            span("key",
+                                span("inline-punctuation", text('"')),
+                                span("key-text", text(key)),
+                                span("inline-punctuation", text('": ')),
+                            ),
+                            key == "name" && link
+                                ? a('link', { href: link }, render(value))
+                                : render(value),
+                            index < array.length - 1 && span("punctuation", text(",")),
+                        )
                     ),
-                    render(value),
-                    index < entries.length - 1 && span("punctuation", text(",")),
-                )),
             ),
             span("punctuation", text("}")),
         );
@@ -77,6 +78,6 @@ window.onload = async () => {
     let cv = await (await fetch("./CV.json")).json();
     let version = new Date().toISOString().slice(0, 16).replace("T", " ");
     cv.version = version;
-    document.body.appendChild(render(cv));
+    document.body.appendChild(div("cv", render(cv)));
     [...document.querySelectorAll("script")].forEach(element => element.remove());
-}
+};

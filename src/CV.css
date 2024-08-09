@@ -91,13 +91,13 @@ span.key-text {
 }
 
 
-body > div.object > ul > li:not(.property-overview):not(.property-version):not(.property-links) > span.key {
+.cv > div.object > ul > li:not(.property-overview):not(.property-version):not(.property-links) > span.key {
     height: 1.2em;
     -webkit-text-stroke-width: 0.5px;
     letter-spacing: 0.5px;
 }
 
-body > div.object > ul > li:not(.property-overview):not(.property-version):not(.property-links) > span.key::before {
+.cv > div.object > ul > li:not(.property-overview):not(.property-version):not(.property-links) > span.key::before {
     content: "";
     background: #faebb9;
     position: absolute;
@@ -107,16 +107,16 @@ body > div.object > ul > li:not(.property-overview):not(.property-version):not(.
     z-index: -1;
 }
 
-body > div.object > ul > li.property-links,
-body > div.object > ul > li.property-version {
+.cv > div.object > ul > li.property-links,
+.cv > div.object > ul > li.property-version {
     font-size: 80%;
 }
 
-body > div.object > ul > li.property-links .property {
+.cv > div.object > ul > li.property-links .property {
     padding-top: 0;
 }
 
-.has-image {
+div.object:has(img) {
     clear: both;
 }
 

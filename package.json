@@ -4,9 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "render": "node render.js"
   },
-  "devDependencies": {
-    "puppeteer": "^5.0.0"
+  "dependencies": {
+    "puppeteer": "^22.13.0"
   }
 }
